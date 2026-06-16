@@ -1,0 +1,49 @@
+#text-vibe-box::-webkit-scrollbar {
+  width: 6px;
+}
+
+#text-vibe-box::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+#text-vibe-box::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+#text-vibe-box::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Animation for the box */
+@keyframes fadeInSlide {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#text-vibe-box {
+  animation: fadeInSlide 0.2s ease-out;
+}
+
+/* Button hover effects */
+.vibe-btn:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s;
+}
+
+.vibe-btn:active {
+  transform: scale(0.95);
+}
+
+/* Loading spinner (optional) */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

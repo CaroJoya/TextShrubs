@@ -1,0 +1,68 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            body
+            {
+                width:300px;
+                padding:20px;
+                font-family:"Segoe UI", sans-serif;
+            }
+            h2
+            {
+                color:#333;
+                margin-top:0;
+            }
+            input
+            {
+                width:100%;
+                padding:10px;
+                margin:10px 0;
+                box-sizing:border-box;
+                border:1px solid #ddd;
+                border-radius:1px;
+            }
+            button
+            {
+                background-color:#007BFF;
+                color:white;
+                border:none;
+                padding:10px 20px;
+                border-radius:1px;
+                cursor:pointer;
+                width:100%;
+                font-size:14px;
+            }
+            button:hover
+            {
+                background-color:#0056b3;
+            }
+            #status
+            {
+                margin-top:10px;
+                color:#28a745;
+                font-size:13px;
+            }
+        </style>
+        </head>
+        <body>
+            <h2>TextShrubs</h2>
+            <p style="font-size:13px; color:#555;">
+                Enter you OpenAi API key to use AI features.
+            </p>
+
+            <input type="password" id="apikey" placeholder"api key">
+            <button id="saveBtn">Save API Key</button>
+
+            <p id="status"></p>
+
+            <p style="font-size:11px; color:#999; margin-top:20px;">
+                Get your API key from 
+                <a href="https://platform.openai.com/account/api-keys" target="_blank" style="color:#007BFF; text-decoration:none;">
+                    platform.openai.com
+                </a>
+            </p>
+            <script src=""popup.js"></script>
+
+        </body>
+</html>
